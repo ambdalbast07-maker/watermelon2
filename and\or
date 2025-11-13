@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    cout << "Enter two numbers: ";
+    cin >> a >> b;
+
+    if (a > 0 && b > 0) {
+        cout << "BOTH POSITIVE" << endl;
+    }
+    else if (a > 0 || b > 0) {
+        cout << "ONE POSITIVE" << endl;
+    }
+    else {
+        cout << "NONE POSITIVE" << endl;
+    }
+
+    return 0;
+}
