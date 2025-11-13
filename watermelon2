@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int w;
+    cout << "Enter the weight of the watermelon: ";
+    cin >> w;
+     if (w % 2 == 0 && w > 2) {
+        cout << "YES" << endl;
+        cout << "You can divide it into: " << w/2 << " + " << w/2 << endl;
+    } else {
+        cout << "NO" << endl;
+    }
+
+    return 0;
