@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cctype>   
+using namespace std;
+
+int main() {
+    int age;
+    cout << "Enter age: ";
+    cin >> age;
+
+    if (age < 13) {
+        cout << "Child Price" << endl;
+    } 
+    else {
+        cout << "Do you have a student ID? (Y/N): ";
+        char ch;
+        cin >> ch;
+        ch = toupper(ch); 
+
+        if (ch == 'Y') {
+            cout << "Student Price" << endl;
+        } 
+        else {
+            cout << "Adult Price" << endl;
+        }
+    }
+
+    return 0;
+}
